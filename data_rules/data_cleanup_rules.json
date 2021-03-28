@@ -1,0 +1,34 @@
+{
+  "rm-nans": {
+    "active": true
+  },
+  "rm-dups": {
+    "active": true
+  },
+  "filter-values": {
+    "active": true,
+    "rules": [
+      {
+        "col": "account_type",
+        "values": "^(?:google|facebook|other)$",
+        "active": true
+      },
+      {
+        "col": "age",
+        "values": "^[0-9]{1,2}$",
+        "active": true
+      }
+    ]
+  },
+  "chg-dtypes": {
+    "active": true,
+    "rules": [
+      {
+        "col": "age",
+        "to": "int",
+        "active": true
+      }
+    ]
+  }
+
+}

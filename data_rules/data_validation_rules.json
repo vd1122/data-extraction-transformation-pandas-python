@@ -1,0 +1,30 @@
+{
+  "no-dups": {
+    "active": true
+  },
+  "no-nans": {
+    "active": true
+  },
+  "cols-no-nans": {
+    "active": true,
+    "cols": [
+      "account_type",
+      "age"
+    ]
+  },
+  "chk-cols-values": {
+    "active": true,
+    "rules": [
+      {
+        "col": "account_type",
+        "values": "^(?:google|facebook|other)$",
+        "active": true
+      },
+      {
+        "col": "age",
+        "values": "^[0-9]{1,2}$",
+        "active": true
+      }
+    ]
+  }
+}
