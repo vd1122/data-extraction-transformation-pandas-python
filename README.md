@@ -124,8 +124,6 @@ Post data cleanup validation report [JSON format]
 │   ├── data_cleanup_rules.json
 │   └── data_validation_rules.json
 ├── modules
-│   │   ├── data_cleanup.cpython-38.pyc
-│   │   └── data_validation.cpython-38.pyc
 │   ├── data_cleanup.py
 │   └── data_validation.py
 └── process_data.py
