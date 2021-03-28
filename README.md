@@ -75,6 +75,9 @@ Pre data cleanup validation report [JSON format]
 --------------------------------------------------------------------------------
 Post data cleanup validation report [JSON format]
 --------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Post data cleanup validation report [JSON format]
+--------------------------------------------------------------------------------
 {
     "fail": [],
     "pass": [
@@ -88,11 +91,11 @@ Post data cleanup validation report [JSON format]
         },
         {
             "check": "col_no_nans",
-            "msg": "OK: Column [{col}] has no NANs."
+            "msg": "OK: Column [account_type] has no NANs."
         },
         {
             "check": "col_no_nans",
-            "msg": "OK: Column [{col}] has no NANs."
+            "msg": "OK: Column [age] has no NANs."
         },
         {
             "check": "col_valid_values",

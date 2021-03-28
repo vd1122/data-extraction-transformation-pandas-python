@@ -29,7 +29,7 @@ class DataValidationBase(metaclass=abc.ABCMeta):
         if self.df[col].isnull().values.any():
             self._report("fail", "col_no_nans", f"Column [{col}] has NANs.")
         else:
-            self._report("pass", "col_no_nans", "Column [{col}] has no NANs.")
+            self._report("pass", "col_no_nans", f"Column [{col}] has no NANs.")
 
     def col_valid_values(self, col, regex):
         if not all(self.df[col].astype(str).str.contains(regex)):
